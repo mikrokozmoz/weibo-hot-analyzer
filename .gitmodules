@@ -1,0 +1,3 @@
+[submodule "weibo-posts-processing"]
+	path = weibo-posts-processing
+	url = https://github.com/mikrokozmoz/weibo-posts-processing

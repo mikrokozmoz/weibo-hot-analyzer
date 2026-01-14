@@ -1,0 +1,15 @@
+# 微博热搜分析工具依赖 | Weibo Hot Search Analyzer Requirements
+
+# 数据处理 | Data Processing
+pandas>=1.0.0
+
+# 网络爬虫 | Web Scraping
+scrapy>=2.0.0
+requests>=2.25.0
+
+# 中文处理 | Chinese Text Processing
+jieba>=0.42.0
+
+# 数据可视化 | Data Visualization
+wordcloud>=1.8.0
+matplotlib>=3.3.0
