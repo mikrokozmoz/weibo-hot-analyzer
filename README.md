@@ -84,10 +84,15 @@ pip install -r requirements.txt
 # load library
 import numpy as np 
 import pandas as pd
+import importlib
 
-from processing.post_analysis import load_posts_from_folder
-from processing.post_analysis import dedupe_posts
-from processing.post_analysis.pre_processing import get_context_posts
+weibo_posts = importlib.import_module('weibo-posts-processing.post_analysis')
+load_posts_from_folder = weibo_posts.load_posts_from_folder
+dedupe_posts = weibo_posts.dedupe_posts
+
+weibo_preprocessing = importlib.import_module('weibo-posts-processing.post_analysis.pre_processing')
+get_context_posts = weibo_preprocessing.get_context_posts
+
 from analyzer.labeling_testing import update_labeling_prompt
 
 # 加载并另存数据
